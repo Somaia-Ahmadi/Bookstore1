@@ -1,0 +1,137 @@
+/* light mode */
+.light-mode {
+  background: radial-gradient(circle at top right, #f6fff7 0%, #eaf7ee 35%, #f3fbf5 100%);
+  color: #1a1a1a;
+}
+
+/* navbar  */
+
+ .light-mode .navbar {
+  background: #e1f7e1;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.light-mode .nav-link,
+.light-mode #logo,
+.light-mode i {
+  color: #222 !important;
+}
+
+
+.light-mode .nav-link:hover {
+  color: #28a745 !important;
+  transition: 0.3s;
+}
+/* hero section  */
+.light-mode body {
+  color: #222;
+}
+.bg-img {
+  height: 800px;
+  width: 1200px;
+  border-radius: 20px;
+  background-image: url("../images/about.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.light-mode .bg-img {
+  background-image: url("../images/light\ bg\ about.png");
+}
+
+
+.light-mode.about-icon i {
+color: green;
+}
+
+/* ================= FOOTER ================= */
+.light-mode footer {
+  background: linear-gradient(135deg, #ffffff, #dcf2e1);
+  color: #121111;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+}
+.light-mode footer h4{
+    color:rgb(18, 173, 18);
+}
+.light-mode footer p{
+    color: black;
+}
+
+
+.light-mode .btn {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.light-mode .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+
+/* ===== FOOTER ===== */
+.light-mode footer {
+  background: radial-gradient(circle at top right, #e3f5e2 0%, #e9f5ee 35%, #d6f1dc 100%);
+}
+.light-mode footer h4{
+  color: rgb(12, 172, 12);
+}
+.light-mode footer p{
+  color: black;
+}
+
+
+/* about style**** */
+.navbar{
+      background: radial-gradient(circle at top right, #171f18 0%, #1a271f 35%, #151d16 100%);
+    
+}
+
+
+body {
+      background: radial-gradient(circle at top right, #0a0e0a 0%, #121d14 35%, #0c110c 100%);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+    }
+      /* navbar style */
+   
+ .bookly{
+      color: rgb(3, 165, 3);
+      font-size: 34px;
+      font-weight: 100px;
+    }
+
+    
+.nav-link{
+  color: white;
+}
+.nav-link:hover{
+  color: rgb(12, 172, 12);
+
+}
+.light{
+  color: white;
+}
+.light:hover{
+  color: rgb(12, 172, 12);
+}
+
+
+    .about-icon i{
+        color: #80f27c;;
+    }
+    
+
+
+
+
+    /* ****  footer */
+footer{
+   background: radial-gradient(circle at top right, #171f18 0%, #1a271f 35%, #151d16 100%);
+  
+}
+footer h4{
+  color:rgb(12, 172, 12)
+}

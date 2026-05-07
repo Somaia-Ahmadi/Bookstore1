@@ -1,0 +1,202 @@
+  /* ===== LIGHT MODE ===== */
+.light-mode {
+  background: radial-gradient(circle at top right, #f5f7f6 0%, #e8f0ec 35%, #ffffff 100%);
+  color: #222;
+}
+
+/* NAVBAR */
+.light-mode .navbar {
+  background: #e1f7e1;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.light-mode .nav-link,
+.light-mode #logo,
+.light-mode i {
+  color: #222 !important;
+}
+
+
+.light-mode .nav-link:hover {
+  color: #28a745 !important;
+  transition: 0.3s;
+}
+
+
+.light-mode .bookly {
+  color: #1bb34a;
+}
+
+/* ===== BOOK CARD ===== */
+.light-mode .book-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.light-mode .book-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+
+.light-mode .book-card h5,
+.light-mode .book-card p {
+  color: #222;
+}
+
+/* ===== CART BUTTON ===== */
+.light-mode #cartBtn {
+  background: #24d459;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* cart part */
+.light-mode #cartPanel {
+  background: #ffffff;
+  color: #222;
+  box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+}
+
+/* CART ITEM */
+.light-mode .cart-item {
+  background: #f2f5f3;
+  color: #222;
+}
+
+/* ===== FOOTER ===== */
+.light-mode footer {
+  background: radial-gradient(circle at top right, #e3f5e2 0%, #e9f5ee 35%, #d6f1dc 100%);
+}
+.light-mode footer h4{
+  color:rgb(12, 172, 12);
+}
+.light-mode footer p{
+  color: black;
+}
+
+/* cart page style */
+.navbar{
+ 
+      background: radial-gradient(circle at top right, #171f18 0%, #1a271f 35%, #151d16 100%);
+    
+}
+.navbar a{
+  color: white;
+}
+
+
+body {
+      background: radial-gradient(circle at top right, #0a0e0a 0%, #121d14 35%, #0c110c 100%);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+    }
+
+    /* navbar style */
+    .bookly{
+      color: rgb(12, 172, 12);
+      font-size: 34px;
+      font-weight: 100px;
+    }
+
+.nav-link{
+  color: white;
+}
+.nav-link:hover{
+  color: rgb(12, 172, 12);
+
+}
+.light{
+  color: white;
+}
+.light:hover{
+  color: rgb(12, 172, 12);
+}
+
+/* ===== BOOK CARD ===== */
+.book-card{
+  background:#1e3424;
+  border-radius:12px;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.book-card:hover{
+  transform:scale(1.03);
+}
+
+.book-card img{
+  height:240px;
+  object-fit:cover;
+}
+
+/* ===== CART ICON ===== */
+#cartBtn{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:#24d459;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:22px;
+  cursor:pointer;
+  z-index:1000;
+}
+
+#cartCount{
+  position:absolute;
+  top:-5px;
+  right:-5px;
+  background:red;
+  font-size:12px;
+  padding:3px 7px;
+  border-radius:50%;
+}
+
+/* ===== SIDE CART ===== */
+#cartPanel{
+  position:fixed;
+  top:0;
+  right:-350px;
+  width:320px;
+  height:100%;
+  background:#0f2a17;
+  padding:15px;
+  transition:0.3s;
+  overflow:auto;
+  z-index:999;
+}
+
+#cartPanel.active{
+  right:0;
+}
+
+.cart-item{
+  background:rgba(0,0,0,0.3);
+  padding:10px;
+  border-radius:10px;
+  margin-bottom:10px;
+  display:flex;
+  gap:10px;
+}
+
+.cart-item img{
+  width:50px;
+  height:70px;
+}
+/* **** index footer */
+footer{
+   background: radial-gradient(circle at top right, #171f18 0%, #1a271f 35%, #151d16 100%);
+  
+}
+footer h4{
+  color: rgb(12, 172, 12);
+}

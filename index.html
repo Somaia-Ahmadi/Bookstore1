@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookstore</title>
+
+    <!--   Bootstrap RTL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+   <!-- icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"  />
+
+    <!-- css -->
+     <link rel="stylesheet" href="./css/style.css">
+<body>
+    <!-- navbar secton -->
+    <nav class="navbar navbar-expand-lg  text-white">
+                  <!-- logo bookly -->
+           <div class="nav">
+                 <a  class="navbar-brand text-white fw-bold " style="padding-bottom: 4px;" href="./index.html" id="logo"> 
+                  <i class="fas fa-book-reader bookly"></i>bookly</a>
+                 </div>
+                 <!-- toggler -->
+        <div class="container">
+         <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+          
+          <div class="collapse navbar-collapse justify-content-center  fs-4" id="mainNavbar">
+            <ul class="navbar-nav   gap-5 sm  ">
+                <li class="nav-item  ">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link " href="./contact.html">contact</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="./about.html">about</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="./cart.html">cart</a>
+                </li>
+            </ul>
+        </div>
+
+          </div>
+
+         <div class="d-flex align-items-center justify-content-evenly">
+
+
+    <a  class="light fs-4  m-3 me-3"href="./cart.html">
+        <i class="	fa fa-cart-arrow-down"></i>
+    </a>
+
+    <a class="light fs-4  me-3 m-3" href="./contact.html">
+        <i class="	fas fa-phone-alt"></i>
+    </a>
+    <button id="moontheme" class="btn text-white fs-4 ">
+  <i class="	fas fa-moon"></i>
+</button>
+
+</div>
+    </nav>
+
+
+
+    <!-- home section* -->
+     
+     <div class="hero-section d-flex align-items-center">
+         <div class="container ">
+        <div class="  col-4">
+            <h3 class="h1">Discover your</h3>
+            <h2>next favorite <strong   class="fw-bold fs-1"  style="color:  rgb(3, 165, 3);;">Book</strong></h2>
+            <br>
+            <p class="fs-4">explore your favorite books and change your world beautifully</p>
+        
+            <div>
+              <a href="./cart.html" class="small-border " style="text-decoration: none;">Shop Now</a>  <br> <br>
+                <a href="#catagory" class="h4 " style="text-decoration: none;">Explore Catagories</a>
+        
+            </div>
+        </div>
+        
+        </div>
+       
+     </div>
+    
+
+
+       <!-- catagories section -->
+<section class="catagories" id="catagory">
+  <h2 class="title-section fs-1">catagories</h2>
+
+  <div class="catagory-boxes">
+    
+    <a href="#" class="catagory-card" onclick="showBooks('Romance')">
+      <div class="icon"><i class="fas fa-book"></i></div>
+      <h3>Romance</h3>
+      <p class="fs-5">6 books</p>
+    </a>
+
+    <a href="#" class="catagory-card" onclick="showBooks('motivation')">
+      <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+      <h3>Motivation</h3>
+      <p class="fs-5">6 books</p>
+    </a>
+
+    <a href="#" class="catagory-card" onclick="showBooks('history')">
+      <div class="icon"><i class="fas fa-user-secret"></i></div>
+      <h3>History</h3>
+      <p class="fs-5">5 books</p>
+    </a>
+
+    <a href="#" class="catagory-card" onclick="showBooks('selfHelp')">
+      <div class="icon"><i class="fas fa-book-reader"></i></div>
+      <h3>Self-help</h3>
+      <p class="fs-5">6 books</p>
+    </a>
+
+  </div>
+
+  <h3 id="categoryTitle"></h3>
+  <div class="row g-4 mt-3" id="bookContainer"></div>
+</section>
+
+
+ <!-- subtitle of catagory -->
+  <h3 id="categoryTitle"></h3>
+
+  <!-- books -->
+  <div class="row g-4 mt-4" id="bookContainer"></div>
+
+</div> 
+
+
+
+
+
+
+
+
+       <!-- ================= BESTSELLERS ***================= -->
+<section class="container my-5">
+
+  <div class="d-flex justify-content-between mb-4">
+    <h3 class="fw-bold">Readers' Favorites:</h3>
+  </div>
+
+  <div class="row g-4 book-container">
+
+    <!-- book1-->
+
+     <div class="col-6 col-md-4 col-lg-2">
+      <div class="book-card">
+        <img src="./images/sapeins.png" height="250px">
+        <h3>Sapiens</h3>
+        <small>Yuval Noah Harari</small>
+        <p class="price">399</p>
+        <a href="./cart.html" class="btn btn-success w-100 add-to-cart" onclick="addToCart('sapeins', 2000,'./images/sapeins.png')">Add to cart </a>
+      </div>
+    </div>
+   
+
+    <!-- book2-->
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="book-card">
+        <img src="./images/5AM club.png" height="250px">
+        <h3>5 AM Club</h3>
+        <small>Robin Sharma</small>
+        <p class="price">600</p>
+        <a href="./cart.html" class="btn btn-success w-100 add-to-cart" onclick="addToCart('5am club', 299,'./images/5AM club.png')">Add to cart</a>
+      </div>
+    </div>
+
+    <!-- book3-->
+
+     <div class="col-6 col-md-4 col-lg-2">
+      <div class="book-card">
+        <img src="./images/atomic habits.png" height="250px">
+        <h3>Atomic Habits</h3>
+        <small>James Clear</small>
+        <p class="price">450</p>
+        <a href="./cart.html" class="btn btn-success w-100 add-to-cart">Add to Cart</a>
+      </div>
+    </div>
+    
+
+    <!--book4-->
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="book-card">
+        <img src="./images/midnight library.png" height="255px">
+        <h3 class="h4">Midnight Library</h3>
+        <small>Matt Haig</small>
+        <p class="price">530</p>
+        <a href="./cart.html" class="btn btn-success w-100 add-to-cart">Add to Cart</a>
+      </div>
+    </div>
+
+    <!-- book5-->
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="book-card">
+        <img src="./images/alchemist.png">
+        <h3>The Alchemist</h3>
+        <small>Paulo Coelho</small>
+        <p class="price">500</p>
+        <a href="./cart.html" class="btn btn-success w-100 add-to-cart">Add to Cart</a>
+      </div>
+    </div>
+
+    <!-- کتاب 6 -->
+   <div class="col-6 col-md-4 col-lg-2">
+      <div class="book-card">
+        <img src="./images/becoming mechelle obama.png" height="250px">
+        <h3>Becoming</h3>
+        <small>Michelle Obama</small>
+        <p class="price">430</p>
+        <a href="./cart.html" class="btn btn-success w-100 add-to-cart">Add to Cart</a>
+      </div>
+    </div>
+
+  </div>
+
+ 
+
+</section>
+<br> <br> <br>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer p-5">
+
+  <div class="row">
+
+    <div class="col-md-4">
+      <h4>Bookly</h4>
+      <p>Your journey to knowledge starts here.</p>
+    </div>
+
+    <div class="col-md-2">
+      <p>Bestsellers</p>
+      <p>New Releases</p>
+    </div>
+
+    <div class="col-md-2">
+      <p>Help</p>
+      <p>Contact</p>
+    </div>
+
+    <div class="col-md-2">
+      <p>About</p>
+      <p>Buying</p>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+
+
+<script src="./js/index.js"></script>
+<script src="./js/cart.js"></script>
+    
+</body>
+</html>
